@@ -279,40 +279,88 @@ nav {
 
 .hero-img {
   flex: 1;
-  min-width: 200px;
-  max-width: 360px;
-  display: flex;
-  align-items: end;
-  position: relative;
-}
-.hero-img-wrap {
-  background: white;
-  border-radius: 24px;
-  padding: 32px 16px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.14);
+  min-width: 240px;
+  max-width: 460px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
-.hero-img-wrap img {
+.hero-img-wrap {
+  background: white;
+  border-radius: 32px;
+  padding: 22px;
+  box-shadow: 0 32px 90px rgba(0, 0, 0, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   width: 100%;
-  border-radius: 16px;
-  animation: floatUp 3s ease-in-out infinite;
+  max-width: 460px;
 }
-@keyframes floatUp {
+.hero-slider {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  min-height: 340px;
+  max-height: 480px;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(26, 122, 46, 0.06);
+}
+.hero-slider::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.12),
+    transparent 32%
+  );
+  pointer-events: none;
+}
+.hero-slider .slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.05);
+  animation: heroSlide 12s infinite ease-in-out;
+}
+.hero-slider .slide:nth-child(1) {
+  animation-delay: 0s;
+}
+.hero-slider .slide:nth-child(2) {
+  animation-delay: 4s;
+}
+.hero-slider .slide:nth-child(3) {
+  animation-delay: 8s;
+}
+@keyframes heroSlide {
   0%,
+  8%,
+  96%,
   100% {
-    transform: translateY(0);
+    opacity: 0;
+    transform: scale(1.05);
   }
-  50% {
-    transform: translateY(-8px);
+  10%,
+  38% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  40%,
+  94% {
+    opacity: 0;
+    transform: scale(1.03);
   }
 }
 .hero-img-top-badge {
   position: absolute;
   top: -12px;
-  left: 20px;
+  left: 18px;
   background: var(--orange);
   color: white;
   font-size: 0.78rem;
@@ -327,7 +375,7 @@ nav {
 .hero-img-badge {
   position: absolute;
   bottom: -14px;
-  right: 20px;
+  right: 18px;
   background: var(--red-dark);
   color: white;
   font-size: 0.78rem;
@@ -339,6 +387,45 @@ nav {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+@media (max-width: 900px) {
+  .hero-img {
+    max-width: 100%;
+    min-width: auto;
+  }
+  .hero-img-wrap {
+    padding: 18px;
+  }
+  .hero-slider {
+    min-height: 300px;
+    max-height: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-inner {
+    flex-direction: column-reverse;
+    gap: 28px;
+  }
+  .hero-img {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+  .hero-img-wrap {
+    padding: 16px;
+  }
+  .hero-slider {
+    min-height: 260px;
+    max-height: 360px;
+  }
+  .hero-img-top-badge {
+    left: 14px;
+  }
+  .hero-img-badge {
+    right: 14px;
+  }
 }
 
 /* ─── STATS BAR ─── */
