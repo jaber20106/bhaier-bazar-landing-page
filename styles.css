@@ -195,7 +195,7 @@ nav {
   font-weight: 700;
   padding: 5px 16px;
   border-radius: 20px;
-  margin-bottom: 22px;
+  margin-bottom: 12px;
 }
 .hero-badge span {
   width: 7px;
@@ -226,12 +226,13 @@ nav {
 .hero h1 .orange-line {
   color: var(--orange);
   display: block;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
 }
 .hero-sub {
   font-size: 1rem;
   color: #4a5c4a;
   line-height: 1.75;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   max-width: 420px;
 }
 .hero-cta {
