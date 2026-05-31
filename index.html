@@ -61,6 +61,30 @@
       </div>
     </nav>
 
+    <!-- TOAST MESSAGE -->
+    <div id="toast" class="toast-message">
+      <div class="toast-content">
+        <span class="toast-text"
+          >ভাইয়ের বাজারের যেইকোনো প্রডাক্ট এ ১০% ছাড়</span
+        >
+        <button class="toast-close" aria-label="Close toast">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
     <!-- HERO -->
     <section class="hero">
       <div class="hero-inner">
@@ -504,5 +528,22 @@
       </a>
       <a href="#top" class="scroll-top-btn" aria-label="উপরে যান">↑</a>
     </div>
+
+    <script>
+      // Toast close functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const toastCloseBtn = document.querySelector(".toast-close");
+        const toast = document.getElementById("toast");
+
+        if (toastCloseBtn && toast) {
+          toastCloseBtn.addEventListener("click", function () {
+            toast.classList.add("closing");
+            setTimeout(() => {
+              toast.style.display = "none";
+            }, 400);
+          });
+        }
+      });
+    </script>
   </body>
 </html>
