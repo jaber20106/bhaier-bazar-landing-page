@@ -1295,7 +1295,8 @@ footer a {
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -1307,13 +1308,13 @@ footer a {
   position: absolute;
   top: 12px;
   right: 12px;
-  background: var(--orange);
+  border-color: var(--green);
+  background: var(--green);
   color: white;
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 0.75rem;
   font-weight: 700;
-  box-shadow: 0 4px 12px rgba(232, 125, 13, 0.3);
 }
 
 .category-content {
