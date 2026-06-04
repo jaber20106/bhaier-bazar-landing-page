@@ -7,15 +7,66 @@ const products = [
     description: "চট্টগ্রামের আসল স্বাদের ঝাল ও মচমচে চিংড়ি বালাচাও",
     shortDesc: "ঐতিহ্যবাহী চিংড়ি বালাচাও",
     image: "/assets/balachao-jar.jpg",
+    icon: "🦐",
     category: "seafood",
     featured: true,
     detailPage: "/products/chingri-balachao.html",
-    sizes: [
-      { grams: 150, originalPrice: 290, price: 280 },
-      { grams: 200, originalPrice: 390, price: 360 },
-      { grams: 300, originalPrice: 590, price: 550 },
-      { grams: 500, originalPrice: 890, price: 850 },
+
+    // HERO SECTION
+    hero: {
+      title: "ভাইয়ের বাজার",
+      subtitle: "চট্টগ্রামের আসল চিংড়ি বালাচাও",
+      description:
+        "ঘরোয়া ঐতিহ্যবাহী রেসিপিতে তৈরী ঝাল, মচমচে ও খাঁটি স্বাদের চিংড়ি বালাচাও - যা একবার খেলেই বারবার খেতে মন চাইবে।",
+      badge: "১০০% খাঁটি – কোনো ভেজাল নেই",
+      topBadge: "⭐ প্রিমিয়াম কোয়ালিটি",
+      bottomBadge: "🌶️ চট্টগ্রামের আসল স্বাদ",
+    },
+
+    // CAROUSEL IMAGES
+    carouselImages: [
+      {
+        src: "/assets/balachao-jar.jpg",
+        alt: "চিংড়ি বালাচাও জার",
+      },
+      {
+        src: "/assets/balachao-jars-all.jpg",
+        alt: "চিংড়ি বালাচাও একসঙ্গে",
+      },
+      {
+        src: "/assets/balachao-plate.jpg",
+        alt: "চিংড়ি বালাচাও প্লেটে পরিবেশিত",
+      },
     ],
+
+    // STATS BAR
+    stats: [
+      { number: "৪টি", label: "সাইজ অপশন" },
+      { number: "১০০%", label: "ফ্রেশ গ্যারান্টি" },
+      { number: "০%", label: "রান্নার ঝামেলা" },
+      { number: "চট্টগ্রাম", label: "ঐতিহ্যবাহী রেসিপি" },
+    ],
+
+    // SIZES
+    sizes: [
+      { grams: "১৫০", originalPrice: "২৯০", price: "২৮০" },
+      { grams: "২০০", originalPrice: "৩৯০", price: "৩৬০" },
+      { grams: "৩০০", originalPrice: "৫৯০", price: "৫৫০" },
+      { grams: "৫০০", originalPrice: "৮৯০", price: "৮৫০" },
+    ],
+
+    // PRODUCT DETAILS
+    product: {
+      title: "প্রিমিয়াম",
+      titleEmphasis: "চিংড়ি বালাচাও",
+      tagline: "চট্টগ্রামের আসল স্বাদের ঝাল ও মচমচে বালাচাও",
+      description:
+        'বালাচাও হচ্ছে এক প্রকার "রেডি টু ইট" সুস্বাদু ও মুখরোচক একটি খাবার। যা মূলত চিংড়ি, পেঁয়াজ, রসুন, শুকনো মরিচ ও মশলার একটি মিশ্রণ। বালাচাও হচ্ছে কক্সবাজার ও চট্টগ্রামের একটি জনপ্রিয় ঐতিহ্যবাহী খাবার। শুটকি প্রেমীদের কাছে অত্যন্ত প্রিয় এই খাবারটি।',
+      image: "/assets/balachao-plate.jpg",
+      name: "চিংড়ি বালাচাও",
+    },
+
+    // INGREDIENTS
     ingredients: [
       "প্রিমিয়াম চিংড়ি শুটকি",
       "দেশি পেঁয়াজ",
@@ -24,6 +75,82 @@ const products = [
       "পটেটো স্লাইস",
       "সিক্রেট মশলা",
     ],
+
+    // WHY SPECIAL SECTION
+    whySpecial: {
+      title: "কেন আমাদের বালাচাও",
+      titleEmphasis: "স্পেশাল?",
+      description:
+        "বাছাইকৃত চিংড়ি শুঁটকি, দেশি পেঁয়াজ-রসুন আর আমাদের নিজস্ব সিক্রেট মশলার জাদুকরী মিশ্রণে তৈরি এই বালাচাও।",
+      cards: [
+        {
+          icon: "🦐",
+          title: "বাছাইকৃত চিংড়ি",
+          description:
+            "প্রিমিয়াম মানের চিংড়ি শুঁটকি ব্যবহার করা হয়, যা প্রতিটি কামড়ে আসল স্বাদ দেয়।",
+        },
+        {
+          icon: "🌶️",
+          title: "পারফেক্ট ঝাল-মচমচে ব্যালেন্স",
+          description:
+            "ঝাল আর মচমচে স্বাদের নিখুঁত ব্যালেন্স, যা আপনার রুচি বাড়িয়ে দেবে বহুগুণ।",
+        },
+        {
+          icon: "✅",
+          title: "সুপার ক্রাঞ্চি ও ফ্রেশ",
+          description:
+            "প্রতিটি ধাপে মান নিয়ন্ত্রণে সর্বোচ্চ গুরুত্ব দিয়ে শতভাগ ফ্রেশ স্বাদের গ্যারান্টি।",
+        },
+        {
+          icon: "🏡",
+          title: "ঘরে তৈরি রেসিপি",
+          description:
+            "চট্টগ্রামের ঐতিহ্যবাহী সিক্রেট মশলার রেসিপিতে তৈরি, কোনো কৃত্রিম উপাদান নেই।",
+        },
+        {
+          icon: "⚡",
+          title: "রেডি টু ইট",
+          description:
+            "কোনো রান্নার ঝামেলা নেই। সরাসরি প্যাকেট খুলে পরিবেশন করুন।",
+        },
+        {
+          icon: "🎁",
+          title: "সব বয়সের পছন্দ",
+          description:
+            "ছোট থেকে বড় সবাই পছন্দ করে এই ঐতিহ্যবাহী কক্সবাজার-চট্টগ্রামের বালাচাও।",
+        },
+      ],
+    },
+
+    // HOW TO ENJOY SECTION (Chingri specific)
+    howToEnjoy: {
+      title: "কিভাবে",
+      titleEmphasis: "উপভোগ করবেন?",
+      description:
+        "যেকোনো খাবারের সাথেই মিলিয়ে নিতে পারেন এই অসাধারণ বালাচাও।",
+      items: [
+        {
+          emoji: "🍚",
+          text: "ধোঁয়া ওঠা গরম ভাত এবং ডালের সাথে",
+        },
+        {
+          emoji: "🍛",
+          text: "খিচুড়ির সেরা সঙ্গী",
+        },
+        {
+          emoji: "🥗",
+          text: "মুড়ি মাখানো কিংবা বিকেলের হালকা নাস্তায়",
+        },
+        {
+          emoji: "🥬",
+          text: "যেকোনো ভর্তা বা ভাজা শাকের স্বাদ বাড়াতে",
+        },
+        {
+          emoji: "😋",
+          text: "এমনকি শুধু মুখে স্ন্যাকস হিসেবেও অতুলনীয়!",
+        },
+      ],
+    },
   },
   {
     id: "nuts-kaju",
