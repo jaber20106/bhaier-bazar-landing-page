@@ -154,24 +154,108 @@ const products = [
   },
   {
     id: "nuts-kaju",
-    name: "কাজু বাদাম",
+    name: "প্রিমিয়াম কাজু বাদাম",
     bengaliName: "কাজু বাদাম",
     description: "প্রিমিয়াম মানের কাজু বাদাম - সুস্বাদু এবং পুষ্টিকর",
     shortDesc: "প্রিমিয়াম কাজু বাদাম",
     image: "/assets/nuts/kaju.jpg",
+    icon: "🥜",
     category: "nuts",
-    featured: true,
+    featured: false,
     detailPage: "/products/nuts-kaju.html",
+
+    // HERO SECTION
+    hero: {
+      title: "ভাইয়ের বাজার",
+      subtitle: "প্রিমিয়াম কাজু বাদাম",
+      description:
+        "বিশ্বমানের প্রিমিয়াম কাজু বাদাম যা সুস্বাদু, ক্রাঞ্চি এবং অত্যন্ত পুষ্টিকর। প্রতিটি কাজু সযত্নে নির্বাচিত।",
+      badge: "১০০% প্রাকৃতিক ও পুষ্টিগুণে ভরপুর",
+      topBadge: "⭐ প্রিমিয়াম কোয়ালিটি",
+      bottomBadge: "🥜 সুস্বাদু এবং পুষ্টিকর",
+    },
+
+    // CAROUSEL IMAGES
+    carouselImages: [
+      {
+        src: "/assets/nuts/kaju.jpg",
+        alt: "প্রিমিয়াম কাজু বাদাম",
+      },
+      {
+        src: "/assets/nuts/kaju.jpg",
+        alt: "প্রিমিয়াম কাজু বাদাম",
+      },
+      {
+        src: "/assets/nuts/kaju.jpg",
+        alt: "প্রিমিয়াম কাজু বাদাম",
+      },
+    ],
+
+    // STATS BAR
+    stats: [
+      { number: "২টি", label: "সাইজ অপশন" },
+      { number: "১০০%", label: "প্রাকৃতিক" },
+      { number: "স্বাস্থ্যকর", label: "এবং পুষ্টিগুনে ভরপুর" },
+    ],
+
+    // SIZES
     sizes: [
-      { grams: 500, originalPrice: 850, price: 800 },
-      { grams: 1000, originalPrice: 1700, price: 1600 },
+      { grams: "৫০০", originalPrice: "৮৫০", price: "৮০০" },
+      { grams: "১০০০", originalPrice: "১৭০০", price: "১৬০০" },
     ],
-    ingredients: [
-      "প্রিমিয়াম কাজু বাদাম",
-      "প্রাকৃতিক তেল",
-      "সামুদ্রিক লবণ",
-      "মশলা",
-    ],
+
+    // PRODUCT DETAILS
+    product: {
+      title: "প্রিমিয়াম",
+      titleEmphasis: "কাজু বাদাম",
+      tagline: "বিশ্বমানের সুস্বাদু এবং ক্রাঞ্চি কাজু",
+      description:
+        "কাজু বাদাম একটি অত্যন্ত জনপ্রিয় এবং পুষ্টিকর খাবার যা প্রোটিন, স্বাস্থ্যকর চর্বি এবং বিভিন্ন খনিজ পদার্থে সমৃদ্ধ। আমাদের কাজু বাদাম সর্বোচ্চ মানের এবং সতেজ অবস্থায় সরবরাহ করা হয়। এটি শুধুমাত্র সুস্বাদুই নয়, বরং স্বাস্থ্যের জন্যও অত্যন্ত উপকারী।",
+      image: "/assets/nuts/kaju.jpg",
+      name: "কাজু বাদাম",
+    },
+
+    // INGREDIENTS
+    ingredients: ["প্রিমিয়াম কাজু বাদাম"],
+
+    // WHY SPECIAL SECTION
+    whySpecial: {
+      title: "কেন আমাদের কাজু বাদাম",
+      titleEmphasis: "স্পেশাল?",
+      description:
+        "বিশ্বমানের প্রিমিয়াম কাজু বাদাম সযত্নে নির্বাচিত এবং প্রস্তুত।",
+      cards: [
+        {
+          icon: "🥜",
+          title: "প্রিমিয়াম মানের",
+          description:
+            "সর্বোচ্চ মানের কাজু বাদাম যা আন্তর্জাতিক মানদণ্ড মেনে চলে এবং সম্পূর্ণ ফ্রেশ।",
+        },
+        {
+          icon: "💪",
+          title: "পুষ্টিকর এবং স্বাস্থ্যকর",
+          description:
+            "প্রোটিন, হেলদি ফ্যাট এবং খনিজ পদার্থে সমৃদ্ধ - স্বাস্থ্যের জন্য বেশি উপকারী।",
+        },
+        {
+          icon: "🌍",
+          title: "আন্তর্জাতিক মান",
+          description:
+            "বিশ্বমানের প্রক্রিয়াকরণ এবং মান নিয়ন্ত্রণে তৈরি কাজু বাদাম।",
+        },
+        {
+          icon: "⚡",
+          title: "তাৎক্ষণিক শক্তি",
+          description: "প্রাকৃতিক শক্তি এবং স্টেমিনা বৃদ্ধির জন্য আদর্শ খাবার।",
+        },
+        {
+          icon: "🎁",
+          title: "সব সময়ের জন্য",
+          description:
+            "স্ন্যাকস, ডেজার্ট বা যেকোনো উপলক্ষে ব্যবহার করা যায় এই সুস্বাদু কাজু বাদাম।",
+        },
+      ],
+    },
   },
   {
     id: "nuts-kat",
@@ -180,19 +264,105 @@ const products = [
     description: "প্রিমিয়াম মানের কাট বাদাম - সুস্বাদু এবং পুষ্টিকর",
     shortDesc: "প্রিমিয়াম কাট বাদাম",
     image: "/assets/nuts/kat.jpg",
+    icon: "🥜",
     category: "nuts",
     featured: false,
     detailPage: "/products/nuts-kat.html",
+
+    // HERO SECTION
+    hero: {
+      title: "ভাইয়ের বাজার",
+      subtitle: "কাট বাদাম",
+      description:
+        "প্রিমিয়াম কাট বাদাম - প্রতিটি কামড়ে নতুন স্বাদের অনুভূতি।",
+      badge: "১০০% প্রাকৃতিক - কোনো ভেজাল নেই",
+      topBadge: "⭐ স্বাদের মেলবন্ধন",
+      bottomBadge: "🥜 বৈচিত্র্যময় এবং সুস্বাদু",
+    },
+
+    // CAROUSEL IMAGES
+    carouselImages: [
+      {
+        src: "/assets/nuts/kat.jpg",
+        alt: "কাট নাট মিক্স",
+      },
+      {
+        src: "/assets/nuts/kat.jpg",
+        alt: "কাট বাদাম প্যাকেজিং",
+      },
+      {
+        src: "/assets/nuts/kat.jpg",
+        alt: "কাট বাদাম প্যাকেজিং",
+      },
+    ],
+
+    // STATS BAR
+    stats: [
+      { number: "২টি", label: "সাইজ অপশন" },
+      { number: "১০০%", label: "প্রাকৃতিক" },
+      { number: "সুস্বাদু", label: "এবং পুষ্টিকর" },
+    ],
+
+    // SIZES
     sizes: [
-      { grams: 500, originalPrice: 750, price: 700 },
-      { grams: 1000, originalPrice: 1500, price: 1400 },
+      { grams: "৫০০", originalPrice: "৭৫০", price: "৭০০" },
+      { grams: "১০০০", originalPrice: "১৫০০", price: "১৪০০" },
     ],
+
+    // PRODUCT DETAILS
+    product: {
+      title: "পুষ্টিগুণে ভরপুর",
+      titleEmphasis: "কাট বাদাম",
+      tagline: "পুষ্টিগুণ সম্পন্ন সুস্বাদু বাদাম",
+      description:
+        "প্রতিটি কাট বাদাম সযত্নে নির্বাচিত। এটি শুধুমাত্র সুস্বাদুই নয়, বরং পুষ্টিগুণে ভরপুর এবং স্বাস্থ্যের জন্য অত্যন্ত উপকারী। বিভিন্ন ধরনের বাদামের সুস্বাদু মিশ্রণ যা প্রতিটি কামড়ে নতুন স্বাদের অনুভূতি দেয়।",
+      image: "/assets/nuts/kat.jpg",
+      name: "কাট বাদাম",
+    },
+
+    // INGREDIENTS
     ingredients: [
-      "বিভিন্ন প্রকার বাদাম",
-      "প্রাকৃতিক তেল",
-      "মশলা",
-      "সামুদ্রিক লবণ",
+      "বিভিন্ন প্রকার প্রিমিয়াম বাদাম",
     ],
+
+    // WHY SPECIAL SECTION
+    whySpecial: {
+      title: "কেন আমাদের কাট বাদাম",
+      titleEmphasis: "স্পেশাল?",
+      description:
+        "বিশ্বমানের প্রিমিয়াম কাট বাদাম সযত্নে নির্বাচিত এবং প্রস্তুত।",
+      cards: [
+        {
+          icon: "🥜",
+          title: "প্রিমিয়াম মানের",
+          description:
+            "সর্বোচ্চ মানের কাট বাদাম যা আন্তর্জাতিক মানদণ্ড মেনে চলে এবং সম্পূর্ণ ফ্রেশ।",
+        },
+        {
+          icon: "💪",
+          title: "পুষ্টিকর এবং স্বাস্থ্যকর",
+          description:
+            "প্রোটিন, হেলদি ফ্যাট এবং খনিজ পদার্থে সমৃদ্ধ - স্বাস্থ্যের জন্য বেশি উপকারী।",
+        },
+        {
+          icon: "🌍",
+          title: "আন্তর্জাতিক মান",
+          description:
+            "বিশ্বমানের প্রক্রিয়াকরণ এবং মান নিয়ন্ত্রণে তৈরি কাট বাদাম।",
+        },
+        {
+          icon: "⚡",
+          title: "তাৎক্ষণিক শক্তি",
+          description: "প্রাকৃতিক শক্তি এবং স্টেমিনা বৃদ্ধির জন্য আদর্শ খাবার।",
+        },
+        {
+          icon: "🎁",
+          title: "সব সময়ের জন্য",
+          description:
+            "স্ন্যাকস, ডেজার্ট বা যেকোনো উপলক্ষে ব্যবহার করা যায় এই সুস্বাদু কাট বাদাম।",
+        },
+      ],
+    },
   },
 ];
 
