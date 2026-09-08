@@ -1,4 +1,4 @@
-// Products data structure
+// Product Data Structure
 const products = [
   {
     id: "chingri-balachao",
@@ -12,7 +12,6 @@ const products = [
     featured: true,
     detailPage: "/products/chingri-balachao.html",
 
-    // HERO SECTION
     hero: {
       title: "ভাইয়ের বাজার",
       subtitle: "চট্টগ্রামের আসল চিংড়ি বালাচাও",
@@ -23,7 +22,6 @@ const products = [
       bottomBadge: "🌶️ চট্টগ্রামের আসল স্বাদ",
     },
 
-    // CAROUSEL IMAGES
     carouselImages: [
       {
         src: "/assets/balachao-jar.jpg",
@@ -39,7 +37,6 @@ const products = [
       },
     ],
 
-    // STATS BAR
     stats: [
       { number: "৪টি", label: "সাইজ অপশন" },
       { number: "১০০%", label: "ফ্রেশ গ্যারান্টি" },
@@ -47,15 +44,13 @@ const products = [
       { number: "চট্টগ্রাম", label: "ঐতিহ্যবাহী রেসিপি" },
     ],
 
-    // SIZES
     sizes: [
       { grams: "১৫০", originalPrice: "২৯০", price: "২৮০" },
-      { grams: "২০০", originalPrice: "৩৯০", price: "৩৬০" },
+      { grams: "২০০", originalPrice: "৩৯০", price: "৩৭০" },
       { grams: "৩০০", originalPrice: "৫৯০", price: "৫৫০" },
       { grams: "৫০০", originalPrice: "৮৯০", price: "৮৫০" },
     ],
 
-    // PRODUCT DETAILS
     product: {
       title: "প্রিমিয়াম",
       titleEmphasis: "চিংড়ি বালাচাও",
@@ -66,7 +61,6 @@ const products = [
       name: "চিংড়ি বালাচাও",
     },
 
-    // INGREDIENTS
     ingredients: [
       "প্রিমিয়াম চিংড়ি শুটকি",
       "দেশি পেঁয়াজ",
@@ -76,7 +70,6 @@ const products = [
       "সিক্রেট মশলা",
     ],
 
-    // WHY SPECIAL SECTION
     whySpecial: {
       title: "কেন আমাদের বালাচাও",
       titleEmphasis: "স্পেশাল?",
@@ -122,7 +115,6 @@ const products = [
       ],
     },
 
-    // HOW TO ENJOY SECTION (Chingri specific)
     howToEnjoy: {
       title: "কিভাবে",
       titleEmphasis: "উপভোগ করবেন?",
@@ -152,214 +144,162 @@ const products = [
       ],
     },
   },
+
+  // ============================================
+  // SEVEN OCEANS NORWEGIAN BISCUIT
+  // ============================================
+
   {
-    id: "nuts-kaju",
-    name: "প্রিমিয়াম কাজু বাদাম",
-    bengaliName: "কাজু বাদাম",
-    description: "প্রিমিয়াম মানের কাজু বাদাম - সুস্বাদু এবং পুষ্টিকর",
-    shortDesc: "প্রিমিয়াম কাজু বাদাম",
-    image: "/assets/nuts/kaju.jpg",
-    icon: "🥜",
-    category: "nuts",
-    featured: false,
-    detailPage: "/products/nuts-kaju.html",
+    id: "seven-oceans-biscuit",
+    name: "Seven Oceans Biscuit",
+    bengaliName: "সেভেন ওসেন বিস্কুট",
+    description:
+      "নরওয়ের জনপ্রিয় Seven Oceans-এর দীর্ঘস্থায়ী ও এনার্জি সমৃদ্ধ বিস্কুট",
+    shortDesc: "নরওয়ের প্রিমিয়াম Seven Oceans Biscuit",
+    image: "/assets/seven-ocean/sevenocean3.jpg",
+    icon: "🍪",
+    category: "snacks",
+    featured: true,
+    detailPage: "/products/seven-oceans-biscuit.html",
 
     // HERO SECTION
     hero: {
       title: "ভাইয়ের বাজার",
-      subtitle: "প্রিমিয়াম কাজু বাদাম",
+      subtitle: "নরওয়ের জনপ্রিয় Seven Oceans Biscuit",
       description:
-        "বিশ্বমানের প্রিমিয়াম কাজু বাদাম যা সুস্বাদু, ক্রাঞ্চি এবং অত্যন্ত পুষ্টিকর। প্রতিটি কাজু সযত্নে নির্বাচিত।",
-      badge: "১০০% প্রাকৃতিক ও পুষ্টিগুণে ভরপুর",
-      topBadge: "⭐ প্রিমিয়াম কোয়ালিটি",
-      bottomBadge: "🥜 সুস্বাদু এবং পুষ্টিকর",
+        "হালকা, মচমচে ও খেতে সুস্বাদু Seven Oceans Biscuit। দীর্ঘদিন সংরক্ষণযোগ্য হওয়ায় বাসা, ভ্রমণ এবং জরুরি খাবারের জন্য এটি হতে পারে একটি চমৎকার পছন্দ।",
+      badge: "⭐ প্রিমিয়াম কোয়ালিটি",
+      topBadge: "🇳🇴 নরওয়ের জনপ্রিয় ব্র্যান্ড",
+      bottomBadge: "🍪 রেডি টু ইট ও দীর্ঘস্থায়ী",
     },
 
     // CAROUSEL IMAGES
     carouselImages: [
       {
-        src: "/assets/nuts/kaju.jpg",
-        alt: "প্রিমিয়াম কাজু বাদাম",
+        src: "/assets/seven-ocean/sevenocean1.jpg",
+        alt: "Seven Oceans Norwegian Biscuit প্যাকেট",
       },
       {
-        src: "/assets/nuts/kaju.jpg",
-        alt: "প্রিমিয়াম কাজু বাদাম",
+        src: "/assets/seven-ocean/sevenocean2.jpg",
+        alt: "Seven Oceans Biscuit বার",
       },
       {
-        src: "/assets/nuts/kaju.jpg",
-        alt: "প্রিমিয়াম কাজু বাদাম",
+        src: "/assets/seven-ocean/sevenocean3.jpg",
+        alt: "Seven Oceans Biscuit পরিবেশিত",
       },
     ],
 
     // STATS BAR
     stats: [
-      { number: "২টি", label: "সাইজ অপশন" },
-      { number: "১০০%", label: "প্রাকৃতিক" },
-      { number: "স্বাস্থ্যকর", label: "এবং পুষ্টিগুনে ভরপুর" },
+      { number: "৯টি", label: "বিস্কুট বার" },
+      { number: "৫০০ গ্রাম", label: "প্যাকেট ওজন" },
+      { number: "Ready", label: "খাওয়ার জন্য প্রস্তুত" },
+      { number: "দীর্ঘস্থায়ী", label: "সংরক্ষণযোগ্য" },
     ],
 
-    // SIZES
+    // SIZES / PACK OPTIONS
     sizes: [
-      { grams: "৫০০", originalPrice: "৮৫০", price: "৮০০" },
-      { grams: "১০০০", originalPrice: "১৭০০", price: "১৬০০" },
+      {
+        grams: "৫০০",
+        originalPrice: "৫৫০",
+        price: "৫৯০",
+      },
     ],
 
     // PRODUCT DETAILS
     product: {
       title: "প্রিমিয়াম",
-      titleEmphasis: "কাজু বাদাম",
-      tagline: "বিশ্বমানের সুস্বাদু এবং ক্রাঞ্চি কাজু",
+      titleEmphasis: "Seven Oceans Biscuit",
+      tagline: "নরওয়ের জনপ্রিয় দীর্ঘস্থায়ী ও এনার্জি সমৃদ্ধ বিস্কুট",
       description:
-        "কাজু বাদাম একটি অত্যন্ত জনপ্রিয় এবং পুষ্টিকর খাবার যা প্রোটিন, স্বাস্থ্যকর চর্বি এবং বিভিন্ন খনিজ পদার্থে সমৃদ্ধ। আমাদের কাজু বাদাম সর্বোচ্চ মানের এবং সতেজ অবস্থায় সরবরাহ করা হয়। এটি শুধুমাত্র সুস্বাদুই নয়, বরং স্বাস্থ্যের জন্যও অত্যন্ত উপকারী।",
-      image: "/assets/nuts/kaju.jpg",
-      name: "কাজু বাদাম",
+        "Seven Oceans Biscuit একটি বিশেষ ধরনের দীর্ঘস্থায়ী বিস্কুট, যা সহজে বহন করা যায় এবং প্রয়োজনের সময় দ্রুত খাওয়া যায়। প্রতিটি প্যাকেটে আলাদা আলাদা বিস্কুট বার থাকে, যা সংরক্ষণ ও ব্যবহারে সুবিধাজনক। বাসায় রাখার পাশাপাশি ভ্রমণ, ক্যাম্পিং, দীর্ঘ যাত্রা এবং জরুরি খাবারের স্টক হিসেবে এটি একটি ব্যবহারিক পছন্দ।",
+      image: "/assets/seven-ocean/sevenocean3.jpg",
+      name: "Seven Oceans Biscuit",
     },
 
-    // INGREDIENTS
-    ingredients: ["প্রিমিয়াম কাজু বাদাম"],
+    // PRODUCT HIGHLIGHTS / INGREDIENTS
+    // প্রকৃত ingredient list প্যাকেটের nutrition label অনুযায়ী update করা ভালো।
+    ingredients: [
+      "উচ্চমানের গমজাত উপাদান",
+      "উদ্ভিজ্জ তেল",
+      "চিনি",
+      "লবণ",
+      "বিস্কুট তৈরির প্রয়োজনীয় উপাদান",
+      "প্রস্তুতকারকের নির্ধারিত পুষ্টি উপাদান",
+    ],
 
     // WHY SPECIAL SECTION
     whySpecial: {
-      title: "কেন আমাদের কাজু বাদাম",
+      title: "কেন Seven Oceans Biscuit",
       titleEmphasis: "স্পেশাল?",
       description:
-        "বিশ্বমানের প্রিমিয়াম কাজু বাদাম সযত্নে নির্বাচিত এবং প্রস্তুত।",
+        "সহজে বহনযোগ্য প্যাকেজিং, দীর্ঘ সময় সংরক্ষণের সুবিধা এবং রেডি-টু-ইট হওয়ার কারণে এটি সাধারণ বিস্কুটের তুলনায় ভ্রমণ ও জরুরি খাবারের স্টকের জন্য বিশেষভাবে উপযোগী।",
       cards: [
         {
-          icon: "🥜",
-          title: "প্রিমিয়াম মানের",
+          icon: "🇳🇴",
+          title: "নরওয়ের জনপ্রিয় পণ্য",
           description:
-            "সর্বোচ্চ মানের কাজু বাদাম যা আন্তর্জাতিক মানদণ্ড মেনে চলে এবং সম্পূর্ণ ফ্রেশ।",
-        },
-        {
-          icon: "💪",
-          title: "পুষ্টিকর এবং স্বাস্থ্যকর",
-          description:
-            "প্রোটিন, হেলদি ফ্যাট এবং খনিজ পদার্থে সমৃদ্ধ - স্বাস্থ্যের জন্য বেশি উপকারী।",
-        },
-        {
-          icon: "🌍",
-          title: "আন্তর্জাতিক মান",
-          description:
-            "বিশ্বমানের প্রক্রিয়াকরণ এবং মান নিয়ন্ত্রণে তৈরি কাজু বাদাম।",
+            "আন্তর্জাতিকভাবে পরিচিত Seven Oceans-এর প্রিমিয়াম মানের বিস্কুট।",
         },
         {
           icon: "⚡",
-          title: "তাৎক্ষণিক শক্তি",
-          description: "প্রাকৃতিক শক্তি এবং স্টেমিনা বৃদ্ধির জন্য আদর্শ খাবার।",
+          title: "দ্রুত খাওয়ার সুবিধা",
+          description:
+            "কোনো রান্না বা প্রস্তুতির প্রয়োজন নেই। প্যাকেট খুলেই সরাসরি খাওয়া যায়।",
         },
         {
-          icon: "🎁",
-          title: "সব সময়ের জন্য",
+          icon: "🎒",
+          title: "সহজে বহনযোগ্য",
           description:
-            "স্ন্যাকস, ডেজার্ট বা যেকোনো উপলক্ষে ব্যবহার করা যায় এই সুস্বাদু কাজু বাদাম।",
+            "ভ্রমণ, ট্যুর, ক্যাম্পিং বা দীর্ঘ যাত্রায় সহজে সঙ্গে বহন করা যায়।",
+        },
+        {
+          icon: "📦",
+          title: "দীর্ঘদিন সংরক্ষণযোগ্য",
+          description:
+            "উপযুক্ত পরিবেশে সংরক্ষণ করলে দীর্ঘ সময়ের জন্য খাবারের স্টক হিসেবে রাখা যায়।",
+        },
+        {
+          icon: "🍪",
+          title: "মচমচে ও সুস্বাদু",
+          description:
+            "হালকা ও মচমচে টেক্সচার এটিকে যেকোনো সময়ের সহজ খাবার হিসেবে উপভোগ্য করে তোলে।",
+        },
+        {
+          icon: "🛟",
+          title: "জরুরি খাবারের জন্য উপযোগী",
+          description:
+            "বাসা বা ভ্রমণে জরুরি খাবারের স্টক হিসেবে রাখার জন্য একটি সুবিধাজনক পণ্য।",
         },
       ],
     },
-  },
-  {
-    id: "nuts-kat",
-    name: "কাট বাদাম",
-    bengaliName: "কাট বাদাম",
-    description: "প্রিমিয়াম মানের কাট বাদাম - সুস্বাদু এবং পুষ্টিকর",
-    shortDesc: "প্রিমিয়াম কাট বাদাম",
-    image: "/assets/nuts/kat.jpg",
-    icon: "🥜",
-    category: "nuts",
-    featured: false,
-    detailPage: "/products/nuts-kat.html",
 
-    // HERO SECTION
-    hero: {
-      title: "ভাইয়ের বাজার",
-      subtitle: "কাট বাদাম",
+    // HOW TO ENJOY SECTION
+    howToEnjoy: {
+      title: "কিভাবে",
+      titleEmphasis: "উপভোগ করবেন?",
       description:
-        "প্রিমিয়াম কাট বাদাম - প্রতিটি কামড়ে নতুন স্বাদের অনুভূতি।",
-      badge: "১০০% প্রাকৃতিক - কোনো ভেজাল নেই",
-      topBadge: "⭐ স্বাদের মেলবন্ধন",
-      bottomBadge: "🥜 বৈচিত্র্যময় এবং সুস্বাদু",
-    },
-
-    // CAROUSEL IMAGES
-    carouselImages: [
-      {
-        src: "/assets/nuts/kat.jpg",
-        alt: "কাট নাট মিক্স",
-      },
-      {
-        src: "/assets/nuts/kat.jpg",
-        alt: "কাট বাদাম প্যাকেজিং",
-      },
-      {
-        src: "/assets/nuts/kat.jpg",
-        alt: "কাট বাদাম প্যাকেজিং",
-      },
-    ],
-
-    // STATS BAR
-    stats: [
-      { number: "২টি", label: "সাইজ অপশন" },
-      { number: "১০০%", label: "প্রাকৃতিক" },
-      { number: "সুস্বাদু", label: "এবং পুষ্টিকর" },
-    ],
-
-    // SIZES
-    sizes: [
-      { grams: "৫০০", originalPrice: "৭৫০", price: "৭০০" },
-      { grams: "১০০০", originalPrice: "১৫০০", price: "১৪০০" },
-    ],
-
-    // PRODUCT DETAILS
-    product: {
-      title: "পুষ্টিগুণে ভরপুর",
-      titleEmphasis: "কাট বাদাম",
-      tagline: "পুষ্টিগুণ সম্পন্ন সুস্বাদু বাদাম",
-      description:
-        "প্রতিটি কাট বাদাম সযত্নে নির্বাচিত। এটি শুধুমাত্র সুস্বাদুই নয়, বরং পুষ্টিগুণে ভরপুর এবং স্বাস্থ্যের জন্য অত্যন্ত উপকারী। বিভিন্ন ধরনের বাদামের সুস্বাদু মিশ্রণ যা প্রতিটি কামড়ে নতুন স্বাদের অনুভূতি দেয়।",
-      image: "/assets/nuts/kat.jpg",
-      name: "কাট বাদাম",
-    },
-
-    // INGREDIENTS
-    ingredients: [
-      "বিভিন্ন প্রকার প্রিমিয়াম বাদাম",
-    ],
-
-    // WHY SPECIAL SECTION
-    whySpecial: {
-      title: "কেন আমাদের কাট বাদাম",
-      titleEmphasis: "স্পেশাল?",
-      description:
-        "বিশ্বমানের প্রিমিয়াম কাট বাদাম সযত্নে নির্বাচিত এবং প্রস্তুত।",
-      cards: [
+        "যেকোনো সময় সহজেই খেতে পারেন এই মচমচে ও সুস্বাদু বিস্কুট।",
+      items: [
         {
-          icon: "🥜",
-          title: "প্রিমিয়াম মানের",
-          description:
-            "সর্বোচ্চ মানের কাট বাদাম যা আন্তর্জাতিক মানদণ্ড মেনে চলে এবং সম্পূর্ণ ফ্রেশ।",
+          emoji: "☕",
+          text: "সকালে বা বিকেলে চা-কফির সাথে",
         },
         {
-          icon: "💪",
-          title: "পুষ্টিকর এবং স্বাস্থ্যকর",
-          description:
-            "প্রোটিন, হেলদি ফ্যাট এবং খনিজ পদার্থে সমৃদ্ধ - স্বাস্থ্যের জন্য বেশি উপকারী।",
+          emoji: "🎒",
+          text: "ভ্রমণ বা দীর্ঘ যাত্রায় সঙ্গে নিয়ে",
         },
         {
-          icon: "🌍",
-          title: "আন্তর্জাতিক মান",
-          description:
-            "বিশ্বমানের প্রক্রিয়াকরণ এবং মান নিয়ন্ত্রণে তৈরি কাট বাদাম।",
+          emoji: "🏕️",
+          text: "ক্যাম্পিং ও আউটডোর অ্যাক্টিভিটিতে",
         },
         {
-          icon: "⚡",
-          title: "তাৎক্ষণিক শক্তি",
-          description: "প্রাকৃতিক শক্তি এবং স্টেমিনা বৃদ্ধির জন্য আদর্শ খাবার।",
+          emoji: "🏠",
+          text: "বাসায় জরুরি খাবারের স্টক হিসেবে সংরক্ষণ করে",
         },
         {
-          icon: "🎁",
-          title: "সব সময়ের জন্য",
-          description:
-            "স্ন্যাকস, ডেজার্ট বা যেকোনো উপলক্ষে ব্যবহার করা যায় এই সুস্বাদু কাট বাদাম।",
+          emoji: "😋",
+          text: "ক্ষুধা লাগলে যেকোনো সময় সরাসরি স্ন্যাকস হিসেবে",
         },
       ],
     },
